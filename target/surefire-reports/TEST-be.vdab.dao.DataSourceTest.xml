@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="1.549" errors="1" skipped="0" tests="1" name="be.vdab.dao.DataSourceTest">
+<testsuite failures="0" time="1.693" errors="1" skipped="0" tests="1" name="be.vdab.dao.DataSourceTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\katja.radelicki\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1514510765584716263.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\katja.radelicki\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf868110787602951154.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jdk1.7.0_51/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_51/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_51/bin/../jre/lib/i386;C:\Program Files (x86)\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin;C:\Program Files (x86)\Java\jdk1.7.0_51\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\DMIX;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Windows Imaging\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files (x86)\eclipse-jee-kepler-SR2-win32\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -63,7 +63,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="1.449" classname="be.vdab.dao.DataSourceTest" name="getConnection">
+  <testcase time="1.583" classname="be.vdab.dao.DataSourceTest" name="getConnection">
     <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
@@ -145,46 +145,46 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
     <system-err>[main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/dao.xml]
 [main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean &apos;filiaalDAO&apos;: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
 [main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean &apos;werknemerDAO&apos;: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
-[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@72282e3b: startup date [Thu Jun 26 11:17:20 CEST 2014]; root of context hierarchy
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@132803ba: startup date [Thu Jun 26 15:45:12 CEST 2014]; root of context hierarchy
 [main] INFO org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [spring/database.properties]
-jun 26, 2014 11:17:20 AM com.mchange.v2.log.MLog &lt;clinit&gt;
+jun 26, 2014 3:45:12 PM com.mchange.v2.log.MLog &lt;clinit&gt;
 INFO: MLog clients using java 1.4+ standard logging.
-jun 26, 2014 11:17:20 AM com.mchange.v2.c3p0.C3P0Registry banner
+jun 26, 2014 3:45:12 PM com.mchange.v2.c3p0.C3P0Registry banner
 INFO: Initializing c3p0-0.9.0.2 [built 26-September-2005 12:55:26 -0400; debug? true; trace: 10]
 [main] INFO org.springframework.context.support.GenericApplicationContext - Bean &apos;dataSource&apos; of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[main] INFO org.springframework.context.support.GenericApplicationContext - Bean &apos;org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#3aa92b03&apos; of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[main] INFO org.springframework.context.support.GenericApplicationContext - Bean &apos;org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#1f926603&apos; of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit &apos;default&apos;
-jun 26, 2014 11:17:20 AM org.hibernate.annotations.common.Version &lt;clinit&gt;
+jun 26, 2014 3:45:12 PM org.hibernate.annotations.common.Version &lt;clinit&gt;
 INFO: HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
-jun 26, 2014 11:17:20 AM org.hibernate.Version logVersion
+jun 26, 2014 3:45:12 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {4.2.13.Final}
-jun 26, 2014 11:17:20 AM org.hibernate.cfg.Environment &lt;clinit&gt;
+jun 26, 2014 3:45:12 PM org.hibernate.cfg.Environment &lt;clinit&gt;
 INFO: HHH000206: hibernate.properties not found
-jun 26, 2014 11:17:20 AM org.hibernate.cfg.Environment buildBytecodeProvider
+jun 26, 2014 3:45:12 PM org.hibernate.cfg.Environment buildBytecodeProvider
 INFO: HHH000021: Bytecode provider name : javassist
-jun 26, 2014 11:17:20 AM org.hibernate.ejb.Ejb3Configuration configure
+jun 26, 2014 3:45:13 PM org.hibernate.ejb.Ejb3Configuration configure
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-jun 26, 2014 11:17:20 AM org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
+jun 26, 2014 3:45:13 PM org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
 INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-jun 26, 2014 11:17:20 AM com.mchange.v2.c3p0.PoolBackedDataSource getPoolManager
-INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@49081cc0[ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 30, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 0, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 49081cc0, idleConnectionTestPeriod -&gt; -1, initialPoolSize -&gt; 3, jdbcUrl -&gt; jdbc:mysql://localhost/SpringVDAB, loginTimeout -&gt; 0, maxIdleTime -&gt; 3600, maxPoolSize -&gt; 15, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 3, numHelperThreads -&gt; 3, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 300, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, usesTraditionalReflectiveProxies -&gt; false ]
-jun 26, 2014 11:17:20 AM org.hibernate.dialect.Dialect &lt;init&gt;
+jun 26, 2014 3:45:13 PM com.mchange.v2.c3p0.PoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@66f42d3[ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 30, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 0, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 66f42d3, idleConnectionTestPeriod -&gt; -1, initialPoolSize -&gt; 3, jdbcUrl -&gt; jdbc:mysql://localhost/SpringVDAB, loginTimeout -&gt; 0, maxIdleTime -&gt; 3600, maxPoolSize -&gt; 15, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 3, numHelperThreads -&gt; 3, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 300, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, usesTraditionalReflectiveProxies -&gt; false ]
+jun 26, 2014 3:45:13 PM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-jun 26, 2014 11:17:20 AM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+jun 26, 2014 3:45:13 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
 INFO: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-jun 26, 2014 11:17:20 AM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+jun 26, 2014 3:45:13 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
 INFO: HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-jun 26, 2014 11:17:20 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+jun 26, 2014 3:45:13 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-jun 26, 2014 11:17:20 AM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
+jun 26, 2014 3:45:13 PM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
 INFO: HV000001: Hibernate Validator 4.3.1.Final
 [main] INFO org.springframework.context.support.GenericApplicationContext - Bean &apos;entityManagerFactory&apos; of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e0567b7: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,entityManagerFactory,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessor#0,jpaMapppingContext,filiaalDAO,werknemerDAO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.orm.jpa.SharedEntityManagerCreator#0]; root of factory hierarchy
-[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e0567b7: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,entityManagerFactory,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessor#0,jpaMapppingContext,filiaalDAO,werknemerDAO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.orm.jpa.SharedEntityManagerCreator#0]; root of factory hierarchy
+[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5daa3e56: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,entityManagerFactory,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessor#0,jpaMapppingContext,filiaalDAO,werknemerDAO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.orm.jpa.SharedEntityManagerCreator#0]; root of factory hierarchy
+[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5daa3e56: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,entityManagerFactory,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessor#0,jpaMapppingContext,filiaalDAO,werknemerDAO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.orm.jpa.SharedEntityManagerCreator#0]; root of factory hierarchy
 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit &apos;default&apos;
-[main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@63b8ff46] to prepare test instance [be.vdab.dao.DataSourceTest@67f7fd0]
+[main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@48fd2348] to prepare test instance [be.vdab.dao.DataSourceTest@63177167]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)

@@ -2,6 +2,7 @@ package be.vdab.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -62,6 +63,7 @@ public class FiliaalServiceImpl implements FiliaalService{
 	}
 
 	@Override
+	@PreAuthorize("hasRole('manager')")
 	public Iterable<Filiaal> findByPostcodeBetween(int van, int tot) {
 		
 		return filiaalDAO.findByAdresPostcodeBetweenOrderByNaamAsc(van, tot);

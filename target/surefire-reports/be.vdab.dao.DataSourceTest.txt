@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: be.vdab.dao.DataSourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.53 sec <<< FAILURE!
-getConnection(be.vdab.dao.DataSourceTest)  Time elapsed: 1.449 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.682 sec <<< FAILURE!
+getConnection(be.vdab.dao.DataSourceTest)  Time elapsed: 1.583 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
