@@ -20,7 +20,10 @@ class WerknemerController {
 	
 	@RequestMapping
 	public ModelAndView findAll() {
-	return new ModelAndView("werknemers/werknemers", "werknemers",
-	werknemerService.findAll());
+		ModelAndView modelAndView=new ModelAndView("werknemers/werknemers", "werknemers",
+				werknemerService.findAll());
+		modelAndView.addObject("werknemersMetHoogsteWedde", werknemerService.findMetHoogsteWedde());
+		System.out.println(" werknemerService.findMetHoogsteWedde() "+ werknemerService.findMetHoogsteWedde());
+	return modelAndView;
 	}
 }

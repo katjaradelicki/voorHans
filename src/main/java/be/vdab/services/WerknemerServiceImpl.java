@@ -1,5 +1,7 @@
 package be.vdab.services;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -22,6 +24,11 @@ public class WerknemerServiceImpl implements WerknemerService {
 	@Override
 	public Iterable<Werknemer> findAll() {
 	return werknemerDAO.findAll(new Sort("familienaam", "voornaam")); 
+	}
+	@Override
+	public Iterable<Werknemer> findMetHoogsteWedde() {
+		
+		return werknemerDAO.findMetHoogsteWedde();
 	}
 
 }

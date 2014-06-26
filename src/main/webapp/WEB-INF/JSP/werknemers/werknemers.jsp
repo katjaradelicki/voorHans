@@ -21,5 +21,15 @@
 </c:forEach>
 </tbody>
 </table>
+<c:if test="${not empty werknemersMetHoogsteWedde}">
+<ul>
+Werknemers met hoogste wedde:
+<c:forEach items="${werknemersMetHoogsteWedde}" var="werknemerMax">
+<li>
+${werknemerMax.voornaam} ${werknemerMax.familienaam} ${werknemerMax.wedde}
+</li>
+</c:forEach>
+</ul>
+</c:if>
 </body>
 </html>
