@@ -8,6 +8,7 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
+import org.springframework.mail.javamail.JavaMailSender;
 
 import be.vdab.dao.FiliaalDAO;
 import be.vdab.entities.Filiaal;
@@ -23,7 +24,7 @@ filiaal = new Filiaal("TestNaam", true, BigDecimal.ONE, new Date(),
 new Adres("Straat", "HuisNr", 1000, "Gemeente"));
 FiliaalDAO filiaalDAO = Mockito.mock(FiliaalDAO.class);
 Mockito.when(filiaalDAO.findByNaam(filiaal.getNaam())).thenReturn(filiaal);
-filiaalService = new FiliaalServiceImpl(filiaalDAO);
+filiaalService = new FiliaalServiceImpl(filiaalDAO,Mockito.mock(JavaMailSender.class));
 }
 @Test(expected = FiliaalMetDezeNaamBestaatAlException.class)
 public void createWerptFiliaalMetDezeNaamException() {

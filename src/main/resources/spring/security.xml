@@ -12,6 +12,7 @@ http://www.springframework.org/schema/security/spring-security.xsd'>
 <http use-expressions='true' realm="VDAB"> 
 <access-denied-handler error-page="/WEB-INF/JSP/forbidden.jsp"/>
 <form-login login-page="/login"  authentication-failure-url="/login?error=true"/> 
+<http-basic/>
 <logout/>
 <remember-me token-validity-seconds="86400"/>
 <intercept-url pattern='/filialen/toevoegen'

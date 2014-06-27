@@ -11,4 +11,14 @@ http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx.xsd'> 
 <context:component-scan base-package='be.vdab.services'/>
 <tx:annotation-driven/> 
+<context:property-placeholder location='classpath:/spring/mailserver.properties'
+ignore-unresolvable='true'/>
+<bean id='mailSender'
+class='org.springframework.mail.javamail.JavaMailSenderImpl'>
+<property name='host' value='${mailserver.host}'/>
+<property name='port' value='${mailserver.port}'/>
+<property name='protocol' value='${mailserver.protocol}'/>
+<property name='username' value='${mailserver.username}'/>
+<property name='password' value='${mailserver.password}'/>
+</bean>
 </beans>
