@@ -7,4 +7,5 @@ import be.vdab.entities.Werknemer;
 public interface WerknemerService {
 Iterable<Werknemer> findAll();
 Iterable<Werknemer> findMetHoogsteWedde();
+void stuurMailMetWerknemersMetHoogsteWedde();
 }

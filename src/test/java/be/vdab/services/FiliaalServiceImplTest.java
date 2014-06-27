@@ -24,7 +24,7 @@ filiaal = new Filiaal("TestNaam", true, BigDecimal.ONE, new Date(),
 new Adres("Straat", "HuisNr", 1000, "Gemeente"));
 FiliaalDAO filiaalDAO = Mockito.mock(FiliaalDAO.class);
 Mockito.when(filiaalDAO.findByNaam(filiaal.getNaam())).thenReturn(filiaal);
-filiaalService = new FiliaalServiceImpl(filiaalDAO,Mockito.mock(JavaMailSender.class));
+filiaalService = new FiliaalServiceImpl(filiaalDAO,Mockito.mock(MailService.class));
 }
 @Test(expected = FiliaalMetDezeNaamBestaatAlException.class)
 public void createWerptFiliaalMetDezeNaamException() {
